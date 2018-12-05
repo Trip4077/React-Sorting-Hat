@@ -1,0 +1,79 @@
+html {
+  font-size: 62.5%;
+  font-family: MedievalSharp, sans-serif;
+
+}
+
+.App {
+  background-image: url("./img/App/bg-main.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: MedievalSharp;
+}
+
+.Welcome {
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 70%;
+  height: 75%;
+
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.Welcome__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+
+  color: black;
+  text-shadow: 2px 2px 10px #fff;
+}
+
+.Welcome__container h1 {
+  font-size: 8.4rem;
+  margin: 0;
+}
+
+.Welcome__container h2 {
+  font-size: 5.2rem;
+  text-align: center;
+}
+
+.Welcome__container button {
+  font-size: 3rem;
+  max-height: 40px;
+  height: 100%;
+  width: 100%;
+  max-width: 125px;
+
+  background-color: grey;
+
+  border: none;
+  box-sizing: content-box;
+
+
+  font-family: MedievalSharp;
+  transition: max-height 1s, max-width 1s, font-size 1s;
+}
+
+.Welcome__container button:focus {
+  outline: none;
+}
+
+.Welcome__container button:hover {
+  max-height: 65px;
+  max-width: 200px;
+  font-size: 4.6rem;
+}
