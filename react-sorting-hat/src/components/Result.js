@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Result = props => {
-  const house = 'Slytherin';
-
+  const house = sessionStorage.house;
   return(
     <header className="Welcome">
       <div className={`Welcome__container ${house}`}>

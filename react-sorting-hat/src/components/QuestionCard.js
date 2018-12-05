@@ -7,17 +7,17 @@ class QuestionCard extends React.Component {
     this.state = {
       question: {
         index: 0,
-        title: 'question1',
+        title: 'You Come Across A Lost Wallet, You:',
         answer: [
-          1,
-          2,
-          3,
-          4
+          "Keep The Money",
+          "Try To Find The Owner",
+          "Turn It Over To The Authorities",
+          "Leave It Where It Is",
         ],
       },
 
       allQuestions: [
-        'Question2',
+        'Two Friends Are Fighting, You:',
         'Question3',
         'Question4',
         'Question5',
@@ -25,7 +25,7 @@ class QuestionCard extends React.Component {
       ],
 
       allAnswers: {
-        0: [4,5,6,7],
+        0: ["Do Nothing", "Get Involed Trying To Break It Up", "Try To Talk To Them Calmly", "Try To Distract Them From The Issue"],
         1: [8,9,10,11],
         2: [12,13,14,15],
         3: [16,17,18,19],
@@ -58,8 +58,33 @@ class QuestionCard extends React.Component {
     const qIndex = this.state.question.index;
 
     if(qIndex === this.state.allQuestions.length) {
-      console.log('done!')
-      console.log(this.state.scores)
+      const scores = this.state.scores;
+      let result = 0;
+
+      for(let i = 0; i < scores.length; i++) {
+        if(scores[i] > result) {
+          result = i;
+        }
+      }
+
+      switch(result) {
+        case 0:
+          sessionStorage.house = 'Slytherin';
+          break;
+
+        case 1:
+          sessionStorage.house = 'Gryffindor';
+          break;
+
+        case 2:
+          sessionStorage.house = 'Ravenclaw';
+          break;
+
+        case 3:
+          sessionStorage.house = 'Hufflepuff';
+          break;
+      }
+
       this.props.pageHandler();
       return;
     }
@@ -82,20 +107,12 @@ class QuestionCard extends React.Component {
         break;
     }
 
-    console.log(qIndex)
-    console.log(this.state.index)
-
-
     this.setState({scores: newScore,
                   question: {
                     title: this.state.allQuestions[qIndex],
                     index: this.state.question.index += 1,
                     answer: this.state.allAnswers[qIndex]
                   }})
-  }
-
-  nextQuestion = event => {
-
   }
 
   render() {
