@@ -18,18 +18,18 @@ class QuestionCard extends React.Component {
 
       allQuestions: [
         'Two Friends Are Fighting, You:',
-        'Question3',
-        'Question4',
-        'Question5',
-        'Question6',
+        'You Accidently Hit Your Toe, Your Response:',
+        'A Pet Is A',
+        'You Are ',
+        'Favorite Color',
       ],
 
       allAnswers: {
         0: ["Do Nothing", "Get Involed Trying To Break It Up", "Try To Talk To Them Calmly", "Try To Distract Them From The Issue"],
-        1: [8,9,10,11],
-        2: [12,13,14,15],
-        3: [16,17,18,19],
-        4: [20,21,22,23],
+        1: ["Inhale Sharply", "Curse", "Focus On Something Else", "Grab Your Foot"],
+        2: ["Tool", "Companion", "Animal", "Friend"],
+        3: ["Logical, Some Creativity","Creative, Some Logic", "Logical", "Creative"],
+        4: ["Silver", "Gold", "Blue", "Yellow"],
       },
 
       value: [
