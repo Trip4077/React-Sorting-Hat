@@ -107,3 +107,26 @@ html {
 .question form input {
   margin: 25px 0;
 }
+
+.question button {
+  width: 120px;
+  height: 35px;
+
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: MedievalSharp;
+  letter-spacing: 2px;
+  color: white;
+
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.question button:hover {
+  background-color: white;
+  color: black;
+}
+
+.question button:focus {
+  outline: none;
+}
