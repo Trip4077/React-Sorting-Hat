@@ -130,3 +130,44 @@ html {
 .question button:focus {
   outline: none;
 }
+
+.result__container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  padding: 75px;
+
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.result__container h1 {
+  font-size: 6rem;
+}
+
+.result__container h2 {
+  font-size: 4.2rem;
+}
+
+.result__container p {
+  font-size: 2.4rem;
+  margin-left: 20px;
+}
+
+.alumni {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.alumni img {
+  height: 200px;
+  width: 125px;
+}
+
+.alumni .alumni__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px;
+}

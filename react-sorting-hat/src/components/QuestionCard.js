@@ -70,21 +70,27 @@ class QuestionCard extends React.Component {
       switch(result) {
         case 0:
           sessionStorage.house = 'Slytherin';
+          sessionStorage.loadCount = 0;
           break;
 
         case 1:
           sessionStorage.house = 'Gryffindor';
+          sessionStorage.loadCount = 0;
           break;
 
         case 2:
           sessionStorage.house = 'Ravenclaw';
+          sessionStorage.loadCount
           break;
 
         case 3:
           sessionStorage.house = 'Hufflepuff';
+          sessionStorage.loadCount
           break;
       }
 
+      
+      this.props.houseHandler(sessionStorage.house);
       this.props.pageHandler();
       return;
     }
