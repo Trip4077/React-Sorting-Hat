@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Welcome = props => {
-  console.log(props)
+
   return(
     <header className="Welcome">
       <div className="Welcome__container">
