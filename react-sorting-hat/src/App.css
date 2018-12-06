@@ -171,3 +171,23 @@ html {
   align-items: center;
   margin: 0 15px;
 }
+
+.Slytherin {
+  border: 2px solid green;
+  color: green;
+}
+
+.Gryffindor {
+  border: 2px solid red;
+  color: red;
+}
+
+.Ravenclaw {
+  border: 2px solid lightblue;
+  color: lightblue;
+}
+
+.Hufflepuff {
+  border: 2px solid yellow;
+  color: yellow;
+}

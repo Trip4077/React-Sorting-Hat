@@ -7,6 +7,18 @@ import merlin from './img/Result/s-merlin.jpg';
 import salazar from './img/Result/s-salazar.jpg';
 import snape from './img/Result/s-snape.jpg';
 
+import godric from './img/Result/g-godric.jpg';
+import harry from './img/Result/g-harry.jpg';
+import minerva from './img/Result/g-minerva.jpg';
+
+import rowena from './img/Result/r-rowena.jpg';
+import garrick from './img/Result/r-garrick.jpg';
+import luna from './img/Result/r-luna.jpg';
+
+import helga from './img/Result/h-helga.jpg';
+import tonks from './img/Result/h-tonks.jpg';
+import newt from './img/Result/h-newt.png';
+
 import './App.css';
 
 class App extends Component {
@@ -50,14 +62,14 @@ class App extends Component {
         this.setState({
           house: sessionStorage.house,
           alumni: [
-            salazar,
-            merlin,
-            snape
+            godric,
+            minerva,
+            harry
           ],
 
           bio: [
             "Godric Gryffindor",
-            "James Potter",
+            "Minerva McGonagall",
             "Harry Potter"
           ],
         });
@@ -67,15 +79,15 @@ class App extends Component {
         this.setState({
           house: sessionStorage.house,
           alumni: [
-            salazar,
-            merlin,
-            snape
+            rowena,
+            garrick,
+            luna
           ],
 
           bio: [
-            "RaveClaw1",
-            "RaveClaw2",
-            "RaveClaw3"
+            "Rowena Ravenclaw",
+            "Garrick Ollivander",
+            "Luna Lovegood"
           ],
         });
         break;
@@ -84,15 +96,15 @@ class App extends Component {
         this.setState({
           house: sessionStorage.house,
           alumni: [
-            salazar,
-            merlin,
-            snape
+            helga,
+            tonks,
+            newt
           ],
 
           bio: [
-            "Huff1",
-            "Huff2",
-            "Huff3"
+            "Helga Hufflepuff",
+            "Nymphadora Tonks",
+            "Newt Scamander"
           ],
         });
         break;
